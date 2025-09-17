@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Users</h1>
+
+    <!-- User List -->
+    <div id="user-list" class="user-list">
+      <!-- Users will be loaded here -->
+    </div>
+
+    <!-- Add User Button -->
+    <button id="open-form-btn" class="btn">➕ Add User</button>
+
+    <!-- User Form (hidden initially) -->
+    <div id="user-form-container" class="form-container hidden">
+      <h2>Add New User</h2>
+      <form id="user-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn">Save</button>
+        <button type="button" id="close-form-btn" class="btn btn-secondary">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
